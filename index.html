@@ -1,0 +1,485 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Alto's Odyssey – out now for iOS</title>
+
+    <!-- META -->
+    <meta name="description" content="The next adventure awaits">
+    <meta name="keywords" content="alto, alto's, altos, adventure, altosadventure, odyssey, altosodyssey, oddyssey, game">
+    <meta name="author" content="Snowman & Harry Nesbitt">
+
+    <!-- APP STORE -->
+    <meta name="apple-itunes-app" content="app-id=1182456409, affiliate-data=at=11lrPB&amp;ct=web">
+
+    <!-- FB -->
+    <meta property="og:title" content="Alto's Odyssey" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://altosodyssey.com/testing93857/resources/img/thumbnail.png" />
+    <meta property="og:url" content="https://www.altosodyssey.com" />
+    <meta property="og:description" content="The next adventure awaits" />
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.altosodyssey.com">
+    <meta name="twitter:title" content="Alto's Odyssey">
+    <meta name="twitter:description" content="The next adventure awaits">
+    <meta name="twitter:image" content="https://altosodyssey.com/testing93857/resources/img/thumbnail.png">
+
+    <!-- CSS -->
+    <link href="resources/css/styles.css" rel="stylesheet" type='text/css'>
+    <link href="resources/lightbox/css/lightbox.css" rel="stylesheet" type='text/css'>
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="resources/lightbox/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="resources/js/script.js"></script>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="resources/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="resources/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="resources/img/favicons/manifest.json">
+    <link rel="mask-icon" href="resources/img/favicons/safari-pinned-tab.svg" color="#542e66">
+    <link rel="shortcut icon" href="resources/img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="resources/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#b896b8">
+
+    <!-- RETINA -->
+    <script>
+        (function(w) {
+            var iphone = (navigator.platform.indexOf("iPhone") != -1) || (navigator.platform.indexOf("iPod") != -1);
+            var dpr = (w.devicePixelRatio === undefined || iphone) ? 1 : w.devicePixelRatio;
+            if (!!w.navigator.standalone) {
+                var r = new XMLHttpRequest();
+                r.open('GET', '/retinaimages.php?devicePixelRatio=' + dpr, false);
+                r.send()
+            } else {
+                document.cookie = 'devicePixelRatio=' + dpr + '; path=/'
+            }
+        })(window)
+    </script>
+    <noscript><style id="devicePixelRatio" media="only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)">html{background-image:url("/retinaimages.php?devicePixelRatio=2")}</style></noscript>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '792477880939151');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+	  src="https://www.facebook.com/tr?id=792477880939151&ev=PageView&noscript=1"
+	/></noscript>
+    <!-- End Facebook Pixel Code -->
+
+</head>
+
+<body>
+
+    <img id="thumb" alt="Alto's Odyssey - the next adventure awaits" src="resources/img/thumbnail.png" width="300">
+
+    <!-- ARTWORK / TITLE -->
+    <div id="artwork">
+        <div class="parallax" id="background" data-scale="4"></div>
+        <div class="parallax" id="layer01" data-scale="10">
+            <div class="clouds"></div>
+            <div class="balloon"></div>
+        </div>
+        <div class="parallax" id="layer02" data-scale="15">
+            <div class="balloon"></div>
+            <canvas id="flag3" width="100" height="40" data-r="97" data-g="70" data-b="120">
+				<div class="fallback"></div>
+			</canvas>
+        </div>
+        <div class="parallax" id="layer03" data-scale="20"></div>
+        <div class="parallax" id="layer04" data-scale="30"></div>
+        <div class="parallax" id="title" data-scale="30">
+            <h1>Alto's Odyssey</h1>
+            <h2 class="parallax" data-scale="-3">The next adventure awaits</h2>
+        </div>
+        <div class="parallax" id="layer05" data-scale="40">
+            <canvas id="flag1" width="100" height="40" data-r="164" data-g="77" data-b="114">
+				<div class="fallback"></div>
+			</canvas>
+            <canvas id="flag2" width="100" height="40" data-r="164" data-g="77" data-b="114">
+				<div class="fallback"></div>
+			</canvas>
+        </div>
+        <div class="parallax" id="layer06" data-scale="50"></div>
+        <div class="parallax" id="layer07" data-scale="45"></div>
+        <div class="parallax" id="layer08" data-scale="80"></div>
+        <div class="parallax" id="layer09" data-scale="100"></div>
+    </div>
+
+    <!-- CONTENT -->
+    <div id="content">
+
+        <div id="inner">
+
+            <!-- APP STORE -->
+            <ul class="store_links">
+                <li><a href="https://itunes.apple.com/app/altos-odyssey/id1182456409?mt=8"><img src="resources/img/download-appstore@1x.png" srcset="resources/img/download-appstore@2x.png 2x" height="55" alt="Apple App Store"></a></li>
+                <li><a href="https://apps.apple.com/app/altos-odyssey/id1495097700?mt=12"><img src="resources/img/download-macappstore@1x.png" srcset="resources/img/download-macappstore@2x.png 2x" height="55" alt="Mac App Store"></a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=com.noodlecake.altosodyssey"><img src="resources/img/download-playstore.png" height="55" alt="Google Play Store"></a></li>
+            </ul>
+
+        </div>
+
+        <!-- THE LOST CITY APPLE ARCADE PROMO -->
+        <div class="cave">
+            <div class="layer cave01"></div>
+            <!--<div class="layer cave02"></div>
+      <div class="layer cave03"></div>-->
+            <div class="treasure">
+                <span>Introducing</span>
+                <!-- <img src="resources/img/lost_city_app_icon.png" alt="App Icon for The Lost City" width="120px"> -->
+                <img src="resources/img/lost_city_title.png" alt="The Lost City" width="321px">
+                <a href="https://youtu.be/fJMIx1VOWVQ" class="trailer_thumb" onclick="this.outerHTML = `<div class='trailer_thumb'><iframe width='600' height='337' src='https://www.youtube.com/embed/fJMIx1VOWVQ?autoplay=1' frameborder='0' allowfullscreen></iframe></div>`; return false;">
+          <img src="resources/img/lost_city_trailer_thumb.png" alt="The Lost City Trailer">
+        </a>
+                <a class="arcade_badge" href="http://apple.co/-AltosOdysseyTLC" target="_blank" rel="noreferrer noopener">
+          <img src="resources/img/arcade_badge.png" alt="Find it on Apple Arcade" width="180px">
+        </a>
+            </div>
+        </div>
+
+        <div id="inner">
+
+            <!-- VIDEO -->
+            <a id="video_thumb" href="https://www.youtube.com/watch?v=PaZsrAi6iJg">
+				<span class="text">Watch the Trailer</span>
+				<span class="button"></span>
+			</a>
+
+            <!-- SCREENSHOTS -->
+            <ul id="screenshots">
+                <li>
+                    <a id="screenshot-1" data-lightbox="screenshots" href="resources/screenshots/01_ChasmJump.png"><img src="resources/screenshots/thumbs/01_ChasmJump.png" alt=""></a></li>
+                <li>
+                    <a id="screenshot-2" data-lightbox="screenshots" href="resources/screenshots02_RainChasm.png"><img src="resources/screenshots/thumbs/02_RainChasm.png" alt=""></a></li>
+                <li>
+                    <a id="screenshot-3" data-lightbox="screenshots" href="resources/screenshots/03_PalmKicker.png"><img src="resources/screenshots/thumbs/03_PalmKicker.png" alt=""></a></li>
+                <li>
+                    <a id="screenshot-6" data-lightbox="screenshots" href="resources/screenshots/06_Sunrise.png"><img src="resources/screenshots/thumbs/06_Sunrise.png" alt=""></a></li>
+                <li>
+                    <a id="screenshot-4" data-lightbox="screenshots" href="resources/screenshots04_BalloonGrind.png"><img src="resources/screenshots/thumbs/04_BalloonGrind.png" alt=""></a></li>
+                <li>
+                    <a id="screenshot-5" data-lightbox="screenshots" href="resources/screenshots/05_WaterDive.png"><img src="resources/screenshots/thumbs/05_WaterDive.png" alt=""></a>
+                </li>
+            </ul>
+
+            <!-- AWARDS -->
+            <ul id="awards">
+                <li>
+                    <a target="_blank" href="https://developer.apple.com/design/awards/">
+                        <p>Apple Design Award<br><small>Winner 2018</small></p>
+                    </a>
+                </li>
+                <br>
+                <li>
+                    <a target="_blank" href="http://awards.bafta.org/award/2019/games/mobile-game">
+                        <p>BAFTA Nominee<br><small>Mobile Game</small></p>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.igf.com/article/2019-independent-games-festival-reveals-years-finalists">
+                        <p>IGF Finalist<br><small>Excellence in Visual Arts<br>&amp;<br>Excellence in Audio</small></p>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.gamechoiceawards.com/winners/index.html">
+                        <p>GDCA Finalist<br><small>Best Mobile Game</small></p>
+                    </a>
+                </li>
+                <br>
+                <li>
+                    <a target="_blank" href="https://gaming.sxsw.com/news/2019/2019-sxsw-gaming-awards-finalists/">
+                        <p>SXSW Finalist<br><small>Mobile Game of the Year</small></p>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.mobilegamesawards.com/finalists/">
+                        <p>MGA Finalist<br><small>Best Audio/Visual<br>Accomplishment<br>&amp;<br>Best Indie Developer</small></p>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.apple.com/newsroom/2018/12/apple-presents-the-best-of-2018/">
+                        <p>Apple TV<br><small>Game of the Year</small></p>
+                    </a>
+                </li>
+                <br>
+                <li>
+                    <a target="_blank" href="https://drivenxdesign.com/LON18/project.asp?ID=17615">
+                        <p>London Design<br>Awards<br><small>Silver Winner 2018</small></p>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://play.google.com/store/apps/topic?id=campaign_editorial_bestof2018_best_indie&hl=en">
+                        <p>Google Play<br><small>Best Indie Games of 2018</small></p>
+                    </a>
+                </li>
+                <br>
+                <li>
+                    <a target="_blank" href="https://www.macstories.net/stories/introducing-macstories-selects-the-best-new-apps-app-updates-and-ios-games-of-2018/">
+                        <p>MacStories<br><small>Best New Game of 2018</small></p>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- QUOTES -->
+            <ul id="quotes">
+                <li>
+                    <blockquote>
+                        <!-- VERGE -->
+                        <p>&ldquo;Stunningly beautiful&rdquo;</p>
+                        <footer>
+                            <a href="https://www.theverge.com/2018/2/21/17035830/altos-odyssey-sequel-iphone-game-ios-adventure-snowboarding">
+								<img src="resources/logos/theverge@1x.png" srcset="resources/logos/theverge@2x.png 2x" height="29" width="171" alt="The Verge">
+							</a>
+                        </footer>
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        <!-- TechCrunch -->
+                        <p>&ldquo;A true joy to play&rdquo;</p>
+                        <footer>
+                            <a href=" https://techcrunch.com/2018/02/21/altos-odyssey-is-now-available-on-ios-and-its-wonderful/">
+								<img src="resources/logos/techcrunch@1x.png" srcset="resources/logos/techcrunch@2x.png 2x" height="38" width="212" alt="TechCrunch"> 
+							</a>
+                        </footer>
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        <!-- Kotaku -->
+                        <p>&ldquo;Dramatic and driving&rdquo;</p>
+                        <footer>
+                            <a href="https://kotaku.com/altos-odyssey-is-a-sequel-that-was-worth-waiting-for-1823242274">
+								<img src="resources/logos/kotaku@1x.png" srcset="resources/logos/kotaku@2x.png 2x" height="57" width="203" alt="Kotaku">
+							</a>
+                        </footer>
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        <!-- MacStories -->
+                        <p>&ldquo;Lush and exotic, vibrant and poetic&rdquo;</p>
+                        <footer>
+                            <a href="https://www.macstories.net/reviews/altos-odyssey-review-desert-tranquility/">
+								<img src="resources/logos/macstories@1x.png" srcset="resources/logos/macstories@2x.png 2x" height="47" width="185" alt="MacStories">
+							</a>
+                        </footer>
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        <!-- TouchArcade -->
+                        <p>&ldquo;Engrossing atmospheric experience&rdquo;</p>
+                        <div class="stars">
+                            <span class="star-icon full">&#9733</span>
+                            <span class="star-icon full">&#9733</span>
+                            <span class="star-icon full">&#9733</span>
+                            <span class="star-icon full">&#9733</span>
+                            <span class="star-icon half">&#9733</span>
+                        </div>
+                        <footer>
+                            <a href="http://toucharcade.com/2018/02/22/altos-odyssey-review-once-more-down-the-mountain/">
+								<img src="resources/logos/toucharcade@1x.png" srcset="resources/logos/toucharcade@2x.png 2x" height="44" width="216" alt="TouchArcade">
+							</a>
+                        </footer>
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        <!-- Pocket Gamer -->
+                        <p>&ldquo;A rich, glorious game&rdquo;</p>
+                        <footer>
+                            <a href="http://www.pocketgamer.co.uk/r/iPhone/Alto%27s+Odyssey/review.asp?c=76739">
+								<img src="resources/logos/pocketgamer@1x.png" srcset="resources/logos/pocketgamer@2x.png 2x" height="135" width="189" alt="PocketGamer">
+							</a>
+                        </footer>
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        <!-- CNET -->
+                        <p>&ldquo;The perfect game sequel&rdquo;</p>
+                        <footer>
+                            <a href="https://www.cnet.com/news/altos-odyssey-from-snowman-might-be-perfect-game-sequel">
+								<img src="resources/logos/cnet@1x.png" srcset="resources/logos/cnet@2x.png 2x" height="125" width="125" alt="CNET">
+							</a>
+                        </footer>
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        <!-- iMore -->
+                        <p>&ldquo;Joy, amazement, and wonder&rdquo;</p>
+                        <footer>
+                            <a href="https://www.imore.com/altos-odyssey-review">
+								<img src="resources/logos/imore@1x.png" srcset="resources/logos/imore@2x.png 2x" height="36" width="147" alt="iMore">
+							</a>
+                        </footer>
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        <!-- Business Insider -->
+                        <p>&ldquo;Might just be the best mobile game out there&rdquo;</p>
+                        <footer>
+                            <a href="http://www.businessinsider.com/altos-odyssey-team-alto-story-2018-2#there-are-several-benefits-to-being-an-apple-first-game-10">
+								<img src="resources/logos/businessinsider@1x.png" srcset="resources/logos/businessinsider@2x.png 2x" height="51" width="164" alt="Business Insider">
+							</a>
+                        </footer>
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        <!-- 148 Apps -->
+                        <p>&ldquo;An incredible sense of style&rdquo;</p>
+                        <footer>
+                            <a href="http://www.148apps.com/reviews/altos-odyssey-review/">
+								<img src="resources/logos/148apps@1x.png" srcset="resources/logos/148apps@2x.png 2x" height="43" width="133" alt="148 Apps">
+							</a>
+                        </footer>
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        <!-- App Advice -->
+                        <p>&ldquo;A sight to behold&rdquo;</p>
+                        <footer>
+                            <a href="https://appadvice.com/post/take-an-adventure-through-the-desert-oasis-in-altos-odyssey/1182456409/1236544879">
+								<img src="resources/logos/appadvice@1x.png" srcset="resources/logos/appadvice@2x.png 2x" height="40" width="207" alt="AppAdvice">
+							</a>
+                        </footer>
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        <!-- The Sweet Setup -->
+                        <p>&ldquo;Sure to bring a smile to your face for years to come&rdquo;</p>
+                        <footer>
+                            <a href="https://thesweetsetup.com/altos-odyssey-sequel-one-favorite-ios-games/">
+								<img src="resources/logos/sweetsetup@1x.png" srcset="resources/logos/sweetsetup@2x.png 2x" height="123" width="106" alt="The Sweet Setup">
+							</a>
+                        </footer>
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        <!-- The Odyssey Online -->
+                        <p>&ldquo;Meditation in motion&rdquo;</p>
+                        <footer>
+                            <a href="https://www.theodysseyonline.com/meditation-in-motion-with-altos-odyssey">
+								<img src="resources/logos/odysseyonline@1x.png" srcset="resources/logos/odysseyonline@2x.png 2x" height="47" width="210" alt="The Odyssey Online">
+							</a>
+                        </footer>
+                    </blockquote>
+                </li>
+                <li>
+                    <blockquote>
+                        <!-- beebom -->
+                        <p>&ldquo;as close to perfect as one could expect&rdquo;</p>
+                        <footer>
+                            <a href="https://beebom.com/played-altos-odyssey-iphone-awesome/">
+								<img src="resources/logos/beebom.svg" height="30" width="148" alt="Beebom">
+							</a>
+                        </footer>
+                    </blockquote>
+                </li>
+            </ul>
+
+            <!-- SIGNUP -->
+            <form id="subscribe" action="https://sendy.builtbysnowman.com/subscribe" method="POST" accept-charset="utf-8">
+                <h3>Sign up to join the adventure.</h3>
+                <input class="text" type="email" placeholder="Enter your email" aria-label="Email" name="email" id="email" />
+                <!-- 'honeypot' field to prevent spambots from signing up via this API call. -->
+                <div style="display:none;">
+                    <label for="hp">HP</label><br/>
+                    <input type="text" name="hp" id="hp" />
+                </div>
+                <input type="hidden" name="list" value="PrDT3c6K1xpXtmXCgb22JA" />
+                <input type="hidden" name="subform" value="yes" />
+                <input class="submit" type="submit" value="Submit" name="submit" id="submit" />
+            </form>
+
+            <!-- SOCIAL LINKS -->
+            <ul id="social">
+                <li>
+                    <a class="twitter" target="_blank" href="https://www.twitter.com/altosadventure">Twitter</a>
+                </li>
+                <li>
+                    <a class="facebook" target="_blank" href="https://www.facebook.com/altosadventure">Facebook</a>
+                </li>
+                <li>
+                    <a class="instagram" target="_blank" href="https://www.instagram.com/altosadventure">Instagram</a>
+                </li>
+            </ul>
+
+            <!-- Links -->
+            <ul id="links">
+                <li><a href="https://altosodyssey.com/press" target="_blank">Press kit ﹣ Alto's Odyssey</a></li>
+                <li><a href="https://altosodyssey.com/press/thelostcity" target="_blank">Press kit ﹣ The Lost City</a></li>
+                <li><a href="https://thesnowmanstore.myshopify.com/">Merch Shop</a></li>
+                <li><a href="mailto:support@altosodyssey.com?cc=ryan@builtbysnowman.com">Get in touch</a></li>
+                <li><a href="mailto:support@altosodyssey.com">Support</a></li>
+                <br>
+                <br>
+                <li><i><a href="https://www.altosadventure.com" target="_blank">Discover where it all began: Alto's Adventure</a></li></i>
+            </ul>
+
+            <!-- CREDIT -->
+            <a id="credit" href="https://www.altosadventure.com/team">
+        <img src="resources/img/team_alto_new.png" alt="Team Alto: Land and Sea, Snowman">
+			</a>
+
+        </div>
+
+    </div>
+
+    <!-- ANALYTICS -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-88597745-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+</body>
+
+</html>
